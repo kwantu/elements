@@ -1,6 +1,6 @@
 {
   "name": "@kwantu/elements",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kwantu Elements",
   "main": "index.js",
   "scripts": {

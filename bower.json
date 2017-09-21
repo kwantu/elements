@@ -8,7 +8,9 @@
     "interactjs": "^1.2.9",
     "dragula.js": "dragula#^3.7.2",
     "lodash": "^4.17.4",
-    "pure-uuid": "^1.4.7"
+    "pure-uuid": "^1.4.7",
+    "paper-input": "PolymerElements/paper-input#^2.0.2",
+    "paper-toggle-button": "PolymerElements/paper-toggle-button#^2.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

@@ -1,0 +1,22 @@
+{
+  "name": "elements",
+  "description": "Kwantu Elements",
+  "main": "index.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "paper-button": "PolymerElements/paper-button#^2.0.0",
+    "interactjs": "^1.2.9",
+    "dragula.js": "dragula#^3.7.2",
+    "lodash": "^4.17.4",
+    "pure-uuid": "^1.4.7"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^v1.0.0"
+  }
+}

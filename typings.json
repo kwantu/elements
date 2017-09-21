@@ -1,0 +1,5 @@
+{
+  "globalDependencies": {
+    "polymer": "registry:dt/polymer#1.1.6+20170113202630"
+  }
+}

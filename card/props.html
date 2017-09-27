@@ -1,8 +1,8 @@
-<link rel="import" href="../../polymer/polymer.html">
-<link rel="import" href="../../paper-input/paper-input.html">
-<link rel="import" href="../../paper-toggle-button/paper-toggle-button.html">
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../../bower_components/paper-toggle-button/paper-toggle-button.html">
 
-<dom-module id="button-props">
+<dom-module id="card-props">
     <template>
         <style>
             :host {
@@ -28,13 +28,7 @@
             }
         </style>
         <div>
-            <paper-input always-float-label label="Label" value={{model.label.i18n.en}}></paper-input>
-            <!--<paper-input always-float-label label="Style" value="{{model.class}}"></paper-input>-->
-            <paper-toggle-button class="green" checked="{{model.attrs.active}}">Active</paper-toggle-button>
-            <paper-toggle-button class="green" checked="{{model.attrs.disabled}}">Disabled</paper-toggle-button>
-            <paper-toggle-button class="green" checked="{{model.attrs.focused}}">Focused</paper-toggle-button>
-            <paper-toggle-button class="green" checked="{{model.attrs.raised}}">Raised</paper-toggle-button>
-            <paper-toggle-button class="green" checked="{{model.attrs.toggles}}">Toggles</paper-toggle-button>
+            <paper-input always-float-label label="Title" value={{model.title.i18n.en}}></paper-input>
         </div>
     </template>
     <script type="text/javascript" src="props.js"></script>

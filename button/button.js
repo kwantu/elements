@@ -26,7 +26,7 @@ Polymer({
         if (event)
             event.stopPropagation()
         // @ts-ignore
-        utils.default.setFocus(this.$.element, document.getElementById('canvas'))
+        utils.setFocus(this.$.element, document.getElementById('canvas'))
     }
 
 });

@@ -11,7 +11,8 @@
     "pure-uuid": "^1.4.7",
     "paper-input": "PolymerElements/paper-input#^2.0.2",
     "paper-toggle-button": "PolymerElements/paper-toggle-button#^2.0.0",
-    "pouchdb": "^6.3.4"
+    "pouchdb": "^6.3.4",
+    "utils": "*"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

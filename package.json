@@ -4,8 +4,8 @@
   "description": "Kwantu elements",
   "main": "index.js",
   "scripts": {
-    "merge:develop": "git checkout develop && git merge feature/kul-form",
-    "merge:master": "git checkout master && git merge develop",
+    "merge:develop": "git checkout develop && git merge feature/kul-form && git push",
+    "merge:master": "git checkout master && git merge develop && git push",
     "publish": "npm run merge:develop && npm run merge:master && bower register elements https://github.com/kwantu/elements.git"
   },
   "repository": {

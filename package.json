@@ -1,0 +1,21 @@
+{
+  "name": "elements",
+  "version": "1.0.0",
+  "description": "Kwantu elements",
+  "main": "index.js",
+  "scripts": {
+    "merge:develop": "git checkout develop && git merge feature/kul-form",
+    "merge:master": "git checkout master && git merge develop",
+    "publish": "npm run merge:develop && npm run merge:master && bower register elements https://github.com/kwantu/elements.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwantu/elements.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwantu/elements/issues"
+  },
+  "homepage": "https://github.com/kwantu/elements#readme"
+}

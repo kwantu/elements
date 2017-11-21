@@ -1,0 +1,30 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../../paper-card/paper-card.html">
+
+<link rel="import" href="../modules/utils.html">
+<link rel="import" href="../modules/element.html">
+
+<dom-module id="kul-form">
+    <template>
+        <style>
+            :host {
+                display: inline-block
+            }
+            .white {
+                background-color: white;
+            }
+            paper-button {
+                margin: 0;
+            }
+        </style>
+        <paper-card id="element" heading="{{model.label.i18n.en}}">
+            <div class="card-content">
+                Add form content here...
+            </div>
+            <div class="card-actions">
+                Add form actions here...
+            </div>
+        </paper-card>
+    </template>
+    <script type="text/javascript" src="form.js"></script>
+</dom-module>

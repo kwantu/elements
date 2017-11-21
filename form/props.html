@@ -1,0 +1,21 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../../paper-input/paper-input.html">
+<link rel="import" href="../../paper-toggle-button/paper-toggle-button.html">
+
+<dom-module id="form-props">
+    <template>
+        <style>
+            :host {
+                display: block;
+                padding: 10px;
+                line-height: 45px;
+            }
+        </style>
+        <div>
+            <paper-input always-float-label label="Title" value={{model.title.i18n.en}}></paper-input>
+            <paper-input always-float-label label="Sub Title" value={{model.subTitle.i18n.en}}></paper-input>
+            
+        </div>
+    </template>
+    <script type="text/javascript" src="props.js"></script>
+</dom-module>

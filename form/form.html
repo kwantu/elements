@@ -10,16 +10,16 @@
             :host {
                 display: inline-block
             }
-            .white {
-                background-color: white;
-            }
-            paper-button {
-                margin: 0;
+            .sub-heading {
+                font-size: 12px;
+                border-bottom: 1px solid #efefef;
             }
         </style>
         <paper-card id="element" heading="{{model.title.i18n.en}}">
-            <div class="card-content">
-                
+            <div class="card-content">                
+                <template is="dom-if" if="{{model.subTitle.i18n.en}}">
+                    <i class="sub-heading">{{model.subTitle.i18n.en}}</i>
+                </template>
             </div>
             <div class="card-actions">
                 <paper-button>Save</paper-button>

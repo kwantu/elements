@@ -6,7 +6,9 @@
   "scripts": {
     "merge:develop": "git checkout develop && git merge feature/kul-form && git push",
     "merge:master": "git checkout master && git merge develop && git push",
-    "publish": "npm run merge:develop && npm run merge:master && bower register elements https://github.com/kwantu/elements.git"
+    "merge": "npm run merge:develop && npm run merge:master",
+    "checkout": "git checkout feature/kul-form",
+    "publish": "npm run merge && bower register elements https://github.com/kwantu/elements.git && npm run checkout"
   },
   "repository": {
     "type": "git",

@@ -28,7 +28,6 @@ Polymer({
                     "pt": ''
                 }
             },            
-            'dataSource': '',
             'dataModel': {
                 'rootNode': '',
                 'fields': [{

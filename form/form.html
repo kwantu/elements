@@ -11,14 +11,19 @@
                 display: inline-block
             }
             .sub-heading {
-                font-size: 12px;
+                font-size: 16px;
                 border-bottom: 1px solid #efefef;
             }
         </style>
         <paper-card id="element" heading="{{model.title.i18n.en}}">
             <div class="card-content">                
                 <template is="dom-if" if="{{model.subTitle.i18n.en}}">
-                    <i class="sub-heading">{{model.subTitle.i18n.en}}</i>
+                    <div class="sub-heading">
+                        <i>{{model.subTitle.i18n.en}}</i>
+                    </div>
+                </template>
+                <template is="dom-repeat" items="{{model.dataModel.fields}}">
+                    
                 </template>
             </div>
             <div class="card-actions">

@@ -33,6 +33,18 @@ Polymer({
         ]
     },
 
+    _addField: (e) => {
+        let item = e;
+        console.log('_addField e: ', item)
+        // this.model.dataModel.fields
+    },
+
+    _removeField: (e, ind) => {
+        let item = e;
+        console.log('_addField e: ', item)
+        console.log('_addField ind: ', ind)
+    },
+
     /**
      * 
      */

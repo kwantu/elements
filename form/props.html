@@ -1,5 +1,6 @@
 <link rel="import" href="../../polymer/polymer.html">
 <link rel="import" href="../../paper-input/paper-input.html">
+<link rel="import" href="../../paper-button/paper-button.html">
 <link rel="import" href="../../paper-toggle-button/paper-toggle-button.html">
 
 <dom-module id="form-props">
@@ -14,7 +15,25 @@
         <div>
             <paper-input always-float-label label="Title" value={{model.title.i18n.en}}></paper-input>
             <paper-input always-float-label label="Sub Title" value={{model.subTitle.i18n.en}}></paper-input>
-            
+            <table>
+                <thead>
+                    <th>Fields</th>
+                    <th><paper-button on-tap="{{_addField}}">Add Field</paper-button></th>
+                </thead>
+                <tbody>
+                    <template is="dom-repeat" items="{{model.dataModel.fields}}">
+                        <tr>
+                            <td>
+                                <paper-input always-float-label label="ID" value={{item.id}}></paper-input>
+                                <paper-input always-float-label label="Label" value={{item.label.i18n.en}}></paper-input>
+                                <paper-input always-float-label label="Data Type" value={{item.dataType}}></paper-input>
+                                <paper-input always-float-label label="Data Mapping" value={{item.mapping}}></paper-input>
+                            </td>
+                            <td><paper-button on-tap="{{_removeField($index)}}">X</paper-button></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>            
         </div>
     </template>
     <script type="text/javascript" src="props.js"></script>

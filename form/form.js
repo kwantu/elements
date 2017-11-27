@@ -14,6 +14,10 @@ Polymer({
         }
     },
 
+    _isString: function(field){
+        return (field.dataType === 'string') ? true : false
+    },
+
     /**
      * 
      */

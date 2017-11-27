@@ -31,7 +31,7 @@ Polymer({
             'dataModel': {
                 'rootNode': '',
                 'fields': [{
-                    'id': '$index',
+                    'id': '',
                     'label': {
                         "i18n": {
                             "en": '',

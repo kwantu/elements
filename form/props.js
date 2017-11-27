@@ -33,16 +33,24 @@ Polymer({
         ]
     },
 
-    _addField: (e) => {
-        let item = e;
-        console.log('_addField e: ', item)
-        // this.model.dataModel.fields
+    addField: function(event) {
+        this.push('model.dataModel.fields', {
+            'id': '',
+            'label': {
+                "i18n": {
+                    "en": '',
+                    "pt": ''
+                }
+            },
+            'dataType': '',
+            'mapping': ''
+        })
     },
 
-    _removeField: (e, ind) => {
-        let item = e;
-        console.log('_addField e: ', item)
-        console.log('_addField ind: ', ind)
+    removeField: function(event) {
+        let item = event.model.item;
+        let index = this.model.dataModel.fields.indexOf(item);
+        this.splice('model.dataModel.fields', index, 1);
     },
 
     /**

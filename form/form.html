@@ -1,5 +1,6 @@
 <link rel="import" href="../../polymer/polymer.html">
 <link rel="import" href="../../paper-card/paper-card.html">
+<link rel="import" href="../../paper-input/paper-input.html">
 
 <link rel="import" href="../modules/utils.html">
 <link rel="import" href="../modules/element.html">
@@ -13,21 +14,32 @@
             .sub-heading {
                 font-size: 16px;
                 border-bottom: 1px solid #efefef;
+                position: relative;
+                top: -30;
+                padding: 5 0;
             }
         </style>
         <paper-card id="element" heading="{{model.title.i18n.en}}">
             <div class="card-content">                
                 <template is="dom-if" if="{{model.subTitle.i18n.en}}">
-                    <div class="sub-heading">
-                        <i>{{model.subTitle.i18n.en}}</i>
-                    </div>
+                    <div class="sub-heading">{{model.subTitle.i18n.en}}</div>
                 </template>
-                <template is="dom-repeat" items="{{model.dataModel.fields}}">
-                    
-                </template>
+                <table>
+                    <tbody>
+                        <template is="dom-repeat" items="{{model.dataModel.fields}}">
+                            <tr>
+                                <template is="dom-if" if="{{_isString(item)}}">
+                                    <paper-input always-float-label label="{{item.label.i18n.en}}"></paper-input>
+                                </template>
+                            </tr>                            
+                        </template>
+                    </tbody>
+                </table>
+                
             </div>
             <div class="card-actions">
                 <paper-button>Save</paper-button>
+                <paper-button>Cancel</paper-button>
             </div>
         </paper-card>
     </template>

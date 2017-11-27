@@ -11,25 +11,28 @@
                 padding: 10px;
                 line-height: 45px;
             }
+            table.fields tr {
+                border: 1px solid #efefef;
+            }
         </style>
         <div>
             <paper-input always-float-label label="Title" value={{model.title.i18n.en}}></paper-input>
             <paper-input always-float-label label="Sub Title" value={{model.subTitle.i18n.en}}></paper-input>
-            <table>
+            <table class="fields">
                 <thead>
                     <th>Fields</th>
-                    <th><paper-button on-tap="{{_addField}}">Add Field</paper-button></th>
+                    <th><paper-button raised on-tap="addField">+</paper-button></th>
                 </thead>
                 <tbody>
                     <template is="dom-repeat" items="{{model.dataModel.fields}}">
                         <tr>
                             <td>
-                                <paper-input always-float-label label="ID" value={{item.id}}></paper-input>
-                                <paper-input always-float-label label="Label" value={{item.label.i18n.en}}></paper-input>
-                                <paper-input always-float-label label="Data Type" value={{item.dataType}}></paper-input>
-                                <paper-input always-float-label label="Data Mapping" value={{item.mapping}}></paper-input>
+                                <paper-input disabled label="Index" value={{index}}></paper-input>
+                                <paper-input label="Label" value={{item.label.i18n.en}}></paper-input>
+                                <paper-input label="Data Type" value={{item.dataType}}></paper-input>
+                                <paper-input label="Data Mapping" value={{item.mapping}}></paper-input>
                             </td>
-                            <td><paper-button on-tap="{{_removeField($index)}}">X</paper-button></td>
+                            <td><paper-button on-tap="removeField">X</paper-button></td>
                         </tr>
                     </template>
                 </tbody>

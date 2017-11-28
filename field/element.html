@@ -1,0 +1,34 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="field.html">
+
+<link rel="import" href="../modules/utils.html">
+<link rel="import" href="../modules/element.html">
+
+<dom-module id="elem-button">
+    <template>
+        <style>
+            :host {
+                display: block;
+                /* background-image: url(); */
+            }
+            :host:hover {
+                cursor: pointer;
+            }
+            div.element {
+                padding: 5px;
+            } 
+            img {
+                vertical-align: middle;
+            }
+            span {
+                padding-left: 5px;
+                position: relative;
+                top: 2px;
+            }
+        </style>
+        <div class="element">
+            <div class="element">Field</div>
+        </div>
+    </template>
+    <script type="text/javascript" src="element.js"></script>
+</dom-module>

@@ -12,15 +12,17 @@
                 display: inline-block
             }
         </style>
-        <template is="dom-if" if="_isRadio()">
-            Radio
-        </template>
-        <template is="dom-if" if="_isCheckbox()">
-            Checkbox
-        </template>
-        <template is="dom-if" if="_isDropdown()">
-            Dropdown
-        </template>
+        <div>
+            <template is="dom-if" if="_isRadio()">
+                Radio
+            </template>
+            <template is="dom-if" if="_isCheckbox()">
+                Checkbox
+            </template>
+            <template is="dom-if" if="_isDropdown()">
+                Dropdown
+            </template>
+        </div>        
     </template>
     <script type="text/javascript" src="select.js"></script>
 </dom-module>

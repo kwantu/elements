@@ -1,0 +1,26 @@
+<link rel="import" href="../../polymer/polymer.html">
+<link rel="import" href="../../paper-card/paper-card.html">
+<link rel="import" href="../../paper-input/paper-input.html">
+
+<link rel="import" href="../modules/utils.html">
+<link rel="import" href="../modules/element.html">
+
+<dom-module id="kul-select">
+    <template>
+        <style>
+            :host {
+                display: inline-block
+            }
+        </style>
+        <template is="dom-if" if="_isRadio()">
+            Radio
+        </template>
+        <template is="dom-if" if="_isCheckbox()">
+            Checkbox
+        </template>
+        <template is="dom-if" if="_isDropdown()">
+            Dropdown
+        </template>
+    </template>
+    <script type="text/javascript" src="select.js"></script>
+</dom-module>
